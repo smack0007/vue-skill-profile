@@ -20,6 +20,7 @@ jobs:
           rm -rf ./dist/css
           rm -rf ./dist/img
           rm -rf ./dist/js
+          npm i
           npm run build:ci
 
       - name: Publish
