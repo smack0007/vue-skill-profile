@@ -1,0 +1,32 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16"
+
+      - name: Build
+        run: |
+          git clone https://github.com/smack0007/vue-skill-profile.git -b dist ./dist
+          rm -rf ./dist/css
+          rm -rf ./dist/img
+          rm -rf ./dist/js
+          npm run build:ci
+
+      - name: Publish
+        run: |
+          git log -1 --pretty=%B > commit.msg
+          cd dist
+          git config --global user.name "smack0007"
+          git config --global user.email "zachary.snow@gmail.com"
+          git add -A && git commit -F "../commit.msg"
+          git push https://smack0007:${{ secrets.API_KEY }}@github.com/smack0007/vue-skill-profile.git
