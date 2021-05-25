@@ -1,7 +1,5 @@
 <template>
-  <div class="home">
-    <h1>Home</h1>
-  </div>
+  <div class="projects"></div>
 </template>
 
 <script lang="ts">
@@ -11,5 +9,7 @@ import { Options, Vue } from "vue-class-component";
   components: {},
   props: {},
 })
-export default class Home extends Vue {}
+export default class Projects extends Vue {
+  public created(): void {}
+}
 </script>

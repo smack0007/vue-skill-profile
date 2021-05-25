@@ -1,11 +1,23 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
+import People from "../views/People.vue";
+import Projects from "../views/Projects.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/people",
+    name: "People",
+    component: People,
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: Projects,
   },
   {
     path: "/about",
@@ -21,6 +33,7 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+  linkActiveClass: "active",
 });
 
 export default router;
