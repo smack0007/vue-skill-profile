@@ -5,6 +5,10 @@ import { PeopleService } from "./peopleService";
 
 @injectable()
 export class PeopleServiceImpl implements PeopleService {
+  public getCount(): number {
+    return data.people.length;
+  }
+
   public getPeople(): Person[] {
     return data.people;
   }

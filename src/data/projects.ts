@@ -1,712 +1,487 @@
 export const projects = [
   {
     "id": 1,
-    "name": "Constantinople Renovation",
+    "name": "Complex Rework",
     "peopleIds": [
-      118,
-      96,
-      133
+      122,
+      51,
+      53
     ],
     "skills": [
-      "dependency-injection",
-      "excel",
-      "git"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Miami Revision",
-    "peopleIds": [
-      133,
-      35
-    ],
-    "skills": [
-      "dependency-injection",
-      "rxjs"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Vista Rework",
-    "peopleIds": [
-      21,
-      134
-    ],
-    "skills": [
-      "excel",
-      "excel",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Istanbul Revision",
-    "peopleIds": [
-      25,
-      120
-    ],
-    "skills": [
-      "css",
-      "svn"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Berlin Conversion",
-    "peopleIds": [
-      74,
-      104,
-      97
-    ],
-    "skills": [
-      "react",
-      "IoT",
-      "git"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Simple Changeover",
-    "peopleIds": [
-      96,
-      129
-    ],
-    "skills": [
-      "zig",
-      "typescript"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Wonderwall Rebranding",
-    "peopleIds": [
-      72,
-      35
-    ],
-    "skills": [
-      "rust",
-      "html"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Constantinople Redesign",
-    "peopleIds": [
-      118,
-      45
-    ],
-    "skills": [
-      "javascript",
-      "svn",
-      "git"
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Chicago Revision",
-    "peopleIds": [
-      83,
-      121
-    ],
-    "skills": [
-      "svn",
-      "blockchain"
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Vista Redesign",
-    "peopleIds": [
-      7,
-      94,
-      61
-    ],
-    "skills": [
-      "C++",
-      "excel"
-    ]
-  },
-  {
-    "id": 11,
-    "name": "Berlin Rework",
-    "peopleIds": [
-      85,
-      35,
-      47
-    ],
-    "skills": [
-      "react",
-      "vue"
-    ]
-  },
-  {
-    "id": 12,
-    "name": "Vista Revision",
-    "peopleIds": [
-      63,
-      67,
-      74
-    ],
-    "skills": [
-      "css",
-      "excel",
-      "html"
-    ]
-  },
-  {
-    "id": 13,
-    "name": "IT Revision",
-    "peopleIds": [
-      115,
-      68
-    ],
-    "skills": [
-      "rust",
-      "git"
-    ]
-  },
-  {
-    "id": 14,
-    "name": "Istanbul Overhaul",
-    "peopleIds": [
-      71,
-      33,
-      35
-    ],
-    "skills": [
-      "svn",
-      "react"
-    ]
-  },
-  {
-    "id": 15,
-    "name": "Chicago Renovation",
-    "peopleIds": [
-      129,
-      112,
-      113
-    ],
-    "skills": [
-      "powerpoint",
-      "dependency-injection",
-      "html"
-    ]
-  },
-  {
-    "id": 16,
-    "name": "Wonderwall Changeover",
-    "peopleIds": [
-      86,
-      2,
-      61
-    ],
-    "skills": [
-      "powerpoint",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 17,
-    "name": "Vista Overhaul",
-    "peopleIds": [
-      73,
-      96
-    ],
-    "skills": [
-      "typescript",
-      "vue"
-    ]
-  },
-  {
-    "id": 18,
-    "name": "IT Rebranding",
-    "peopleIds": [
-      55,
-      90,
-      2
-    ],
-    "skills": [
-      "javascript",
-      "angular"
-    ]
-  },
-  {
-    "id": 19,
-    "name": "Berlin Revision",
-    "peopleIds": [
-      62,
-      95
-    ],
-    "skills": [
-      "vue",
+      "word",
       "zig"
     ]
   },
   {
-    "id": 20,
-    "name": "Vista Rebranding",
+    "id": 2,
+    "name": "Canary Overhaul",
     "peopleIds": [
-      68,
-      19
+      7,
+      53
     ],
     "skills": [
-      "zig",
-      "dependency-injection"
+      "vue",
+      "IoT"
     ]
   },
   {
-    "id": 21,
-    "name": "Berlin 2.0",
+    "id": 3,
+    "name": "Manila Changeover",
     "peopleIds": [
-      57,
-      125,
-      62
+      41,
+      98
     ],
     "skills": [
-      "rxjs",
-      "react",
+      "javascript",
+      "rust",
+      "word"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Lima Rework",
+    "peopleIds": [
+      111,
+      107
+    ],
+    "skills": [
+      "vue",
       "powerpoint"
     ]
   },
   {
-    "id": 22,
-    "name": "IT Rework",
+    "id": 5,
+    "name": "Wombat 2.0",
     "peopleIds": [
-      106,
-      45,
-      116
+      49,
+      77,
+      86
+    ],
+    "skills": [
+      "svn",
+      "dependency-injection"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Red Revision",
+    "peopleIds": [
+      44,
+      85
     ],
     "skills": [
       "javascript",
-      "html"
+      "zig"
     ]
   },
   {
-    "id": 23,
-    "name": "Constantinople Redesign",
+    "id": 7,
+    "name": "Excalibur 5.0",
     "peopleIds": [
-      12,
-      9
+      3,
+      101
     ],
     "skills": [
-      "svn",
-      "react"
-    ]
-  },
-  {
-    "id": 24,
-    "name": "Simple Project",
-    "peopleIds": [
-      41,
-      15,
-      111
-    ],
-    "skills": [
-      "vue",
-      "powerpoint",
-      "vue"
-    ]
-  },
-  {
-    "id": 25,
-    "name": "Portland Rebranding",
-    "peopleIds": [
-      112,
-      129,
-      75
-    ],
-    "skills": [
-      "svn",
+      "angular",
+      "typescript",
       "C#"
     ]
   },
   {
-    "id": 26,
-    "name": "Portland Revision",
+    "id": 8,
+    "name": "Simple Rework",
     "peopleIds": [
-      1,
-      31
+      60,
+      76,
+      54
     ],
     "skills": [
-      "svg",
-      "C#",
+      "svn",
+      "react",
       "blockchain"
     ]
   },
   {
-    "id": 27,
-    "name": "Portland Changeover",
+    "id": 9,
+    "name": "Manila 5.0",
     "peopleIds": [
-      33,
-      60,
-      125
+      80,
+      94,
+      118
+    ],
+    "skills": [
+      "css",
+      "svn",
+      "C++"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Portland Revision",
+    "peopleIds": [
+      22,
+      132
+    ],
+    "skills": [
+      "excel",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Portland 5.0",
+    "peopleIds": [
+      134,
+      131
+    ],
+    "skills": [
+      "svn",
+      "word",
+      "svg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Complex 3.0",
+    "peopleIds": [
+      66,
+      122
+    ],
+    "skills": [
+      "html",
+      "vue"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Bigfish 3.5",
+    "peopleIds": [
+      2,
+      85,
+      67
+    ],
+    "skills": [
+      "svn",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Vista Renovation",
+    "peopleIds": [
+      131,
+      112
+    ],
+    "skills": [
+      "C++",
+      "rust",
+      "git"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Buffalo Redesign",
+    "peopleIds": [
+      46,
+      89
+    ],
+    "skills": [
+      "zig",
+      "C",
+      "powerpoint"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Miami Changeover",
+    "peopleIds": [
+      13,
+      17,
+      110
+    ],
+    "skills": [
+      "vue",
+      "COBOL",
+      "rust"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Lima Renovation",
+    "peopleIds": [
+      86,
+      96,
+      9
+    ],
+    "skills": [
+      "rust",
+      "angular"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Yellow",
+    "peopleIds": [
+      41,
+      49
+    ],
+    "skills": [
+      "C",
+      "typescript",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Constantinople 3.5",
+    "peopleIds": [
+      72,
+      126,
+      60
+    ],
+    "skills": [
+      "vue",
+      "dependency-injection"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Wombat Changeover",
+    "peopleIds": [
+      72,
+      82
+    ],
+    "skills": [
+      "C#",
+      "dependency-injection",
+      "javascript"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Berlin",
+    "peopleIds": [
+      10,
+      128,
+      123
     ],
     "skills": [
       "rxjs",
-      "rxjs"
+      "C"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Wonderwall Project",
+    "peopleIds": [
+      5,
+      24
+    ],
+    "skills": [
+      "svg",
+      "rust",
+      "typescript"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Complex Renovation",
+    "peopleIds": [
+      120,
+      42,
+      19
+    ],
+    "skills": [
+      "svg",
+      "javascript"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Buffalo Changeover",
+    "peopleIds": [
+      124,
+      20,
+      49
+    ],
+    "skills": [
+      "IoT",
+      "zig"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Miami",
+    "peopleIds": [
+      132,
+      85,
+      80
+    ],
+    "skills": [
+      "dependency-injection",
+      "svg"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Canary Rework",
+    "peopleIds": [
+      97,
+      70,
+      99
+    ],
+    "skills": [
+      "COBOL",
+      "javascript"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Complex Overhaul",
+    "peopleIds": [
+      2,
+      2
+    ],
+    "skills": [
+      "C++",
+      "svg"
     ]
   },
   {
     "id": 28,
     "name": "IT Renovation",
     "peopleIds": [
-      62,
-      77
+      64,
+      20,
+      135
     ],
     "skills": [
-      "svg",
-      "rxjs"
+      "COBOL",
+      "zig",
+      "dependency-injection"
     ]
   },
   {
     "id": 29,
-    "name": "Vista Rebranding",
+    "name": "Orleans Rework",
     "peopleIds": [
-      39,
-      32
+      119,
+      110
     ],
     "skills": [
-      "react",
-      "svg",
-      "excel"
-    ]
-  },
-  {
-    "id": 30,
-    "name": "Istanbul Overhaul",
-    "peopleIds": [
-      32,
-      130,
-      134
-    ],
-    "skills": [
-      "html",
-      "css",
-      "zig"
-    ]
-  },
-  {
-    "id": 31,
-    "name": "Wonderwall Project",
-    "peopleIds": [
-      63,
-      74,
-      85
-    ],
-    "skills": [
-      "IoT",
-      "javascript"
-    ]
-  },
-  {
-    "id": 32,
-    "name": "Seattle Overhaul",
-    "peopleIds": [
-      45,
-      80
-    ],
-    "skills": [
-      "svn",
-      "blockchain",
-      "git"
-    ]
-  },
-  {
-    "id": 33,
-    "name": "Vista Changeover",
-    "peopleIds": [
-      41,
-      55,
-      63
-    ],
-    "skills": [
-      "dependency-injection",
-      "rust",
-      "svg"
-    ]
-  },
-  {
-    "id": 34,
-    "name": "Buffalo Rework",
-    "peopleIds": [
-      3,
-      93,
-      115
-    ],
-    "skills": [
-      "svn",
-      "zig",
-      "excel"
-    ]
-  },
-  {
-    "id": 35,
-    "name": "Wonderwall 2.0",
-    "peopleIds": [
-      45,
-      128
-    ],
-    "skills": [
-      "C#",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 36,
-    "name": "Chicago Rebranding",
-    "peopleIds": [
-      64,
-      77,
-      13
-    ],
-    "skills": [
-      "IoT",
-      "word",
-      "html"
-    ]
-  },
-  {
-    "id": 37,
-    "name": "Vista Overhaul",
-    "peopleIds": [
-      60,
-      104
-    ],
-    "skills": [
-      "dependency-injection",
-      "zig"
-    ]
-  },
-  {
-    "id": 38,
-    "name": "Simple 2.0",
-    "peopleIds": [
-      91,
-      50,
-      87
-    ],
-    "skills": [
-      "react",
-      "svn"
-    ]
-  },
-  {
-    "id": 39,
-    "name": "Wonderwall 2.0",
-    "peopleIds": [
-      79,
-      103
-    ],
-    "skills": [
-      "angular",
-      "rust",
-      "IoT"
-    ]
-  },
-  {
-    "id": 40,
-    "name": "Constantinople Conversion",
-    "peopleIds": [
-      109,
-      97
-    ],
-    "skills": [
-      "excel",
-      "css",
-      "javascript"
-    ]
-  },
-  {
-    "id": 41,
-    "name": "Wonderwall Project",
-    "peopleIds": [
-      100,
-      36,
-      126
-    ],
-    "skills": [
-      "git",
-      "css"
-    ]
-  },
-  {
-    "id": 42,
-    "name": "Constantinople Redesign",
-    "peopleIds": [
-      41,
-      117,
-      87
-    ],
-    "skills": [
-      "excel",
-      "angular"
-    ]
-  },
-  {
-    "id": 43,
-    "name": "Simple Changeover",
-    "peopleIds": [
-      49,
-      114,
-      2
-    ],
-    "skills": [
-      "excel",
-      "C#",
-      "rxjs"
-    ]
-  },
-  {
-    "id": 44,
-    "name": "Portland 2.0",
-    "peopleIds": [
-      103,
-      69,
-      129
-    ],
-    "skills": [
-      "svg",
-      "powerpoint",
-      "rxjs"
-    ]
-  },
-  {
-    "id": 45,
-    "name": "Chicago Rework",
-    "peopleIds": [
-      78,
-      113,
-      106
-    ],
-    "skills": [
-      "vue",
-      "react",
-      "blockchain"
-    ]
-  },
-  {
-    "id": 46,
-    "name": "Miami Changeover",
-    "peopleIds": [
-      32,
-      103,
-      83
-    ],
-    "skills": [
-      "zig",
-      "rust",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 47,
-    "name": "Portland Revision",
-    "peopleIds": [
-      17,
-      125
-    ],
-    "skills": [
-      "css",
-      "excel"
-    ]
-  },
-  {
-    "id": 48,
-    "name": "Miami Rebranding",
-    "peopleIds": [
-      71,
-      44,
-      112
-    ],
-    "skills": [
-      "angular",
-      "vue"
-    ]
-  },
-  {
-    "id": 49,
-    "name": "Chicago Rework",
-    "peopleIds": [
-      93,
-      76,
-      82
-    ],
-    "skills": [
-      "C#",
-      "html"
-    ]
-  },
-  {
-    "id": 50,
-    "name": "Berlin Redesign",
-    "peopleIds": [
-      5,
-      17
-    ],
-    "skills": [
-      "vue",
-      "C#",
-      "word"
-    ]
-  },
-  {
-    "id": 51,
-    "name": "Wonderwall Project",
-    "peopleIds": [
-      9,
-      50
-    ],
-    "skills": [
-      "rust",
-      "excel",
-      "rust"
-    ]
-  },
-  {
-    "id": 52,
-    "name": "Buffalo 2.0",
-    "peopleIds": [
-      66,
-      54
-    ],
-    "skills": [
-      "IoT",
       "rxjs",
       "dependency-injection"
     ]
   },
   {
-    "id": 53,
-    "name": "Wonderwall Conversion",
+    "id": 30,
+    "name": "Bigfoot Overhaul",
     "peopleIds": [
-      66,
-      37
+      83,
+      104,
+      9
     ],
     "skills": [
-      "css",
-      "C++"
+      "svn",
+      "dependency-injection",
+      "COBOL"
     ]
   },
   {
-    "id": 54,
-    "name": "IT Overhaul",
+    "id": 31,
+    "name": "Chicago Overhaul",
     "peopleIds": [
-      126,
-      74
+      38,
+      13
     ],
     "skills": [
-      "css",
-      "excel",
+      "C#",
+      "word",
+      "javascript"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Wombat Revamp",
+    "peopleIds": [
+      87,
+      27
+    ],
+    "skills": [
+      "svn",
+      "svg"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Seattle",
+    "peopleIds": [
+      29,
+      77
+    ],
+    "skills": [
+      "svg",
       "svn"
     ]
   },
   {
-    "id": 55,
-    "name": "Vista Conversion",
+    "id": 34,
+    "name": "Red Redesign",
     "peopleIds": [
-      130,
-      74,
-      16
+      116,
+      48
+    ],
+    "skills": [
+      "html",
+      "word"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Buffalo Conversion",
+    "peopleIds": [
+      87,
+      24
+    ],
+    "skills": [
+      "C#",
+      "blockchain",
+      "css"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Tokyo Redesign",
+    "peopleIds": [
+      59,
+      106,
+      85
+    ],
+    "skills": [
+      "git",
+      "svn"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Cairo Project",
+    "peopleIds": [
+      111,
+      32,
+      135
+    ],
+    "skills": [
+      "C",
+      "word",
+      "excel"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Casanova Overhaul",
+    "peopleIds": [
+      65,
+      56
     ],
     "skills": [
       "rxjs",
@@ -714,1036 +489,1366 @@ export const projects = [
     ]
   },
   {
-    "id": 56,
-    "name": "IT Revision",
+    "id": 39,
+    "name": "Orleans",
     "peopleIds": [
-      33,
-      2
+      1,
+      83
     ],
     "skills": [
-      "javascript",
-      "svn"
+      "rxjs",
+      "dependency-injection",
+      "zig"
     ]
   },
   {
-    "id": 57,
-    "name": "IT Rework",
+    "id": 40,
+    "name": "Wombat",
     "peopleIds": [
-      32,
-      126
+      81,
+      14
     ],
     "skills": [
-      "IoT",
+      "git",
       "powerpoint"
     ]
   },
   {
-    "id": 58,
-    "name": "Berlin Redesign",
+    "id": 41,
+    "name": "Istanbul",
     "peopleIds": [
-      129,
-      60
+      135,
+      14,
+      33
     ],
     "skills": [
-      "dependency-injection",
+      "powerpoint",
+      "C++"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Lagos 3.0",
+    "peopleIds": [
+      15,
+      41,
+      95
+    ],
+    "skills": [
+      "word",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Yellow 2.0",
+    "peopleIds": [
+      130,
+      17,
+      16
+    ],
+    "skills": [
+      "blockchain",
+      "C",
+      "typescript"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Bigfoot 3.5",
+    "peopleIds": [
+      75,
+      78,
+      112
+    ],
+    "skills": [
+      "git",
+      "powerpoint"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Manila Project",
+    "peopleIds": [
+      24,
+      32
+    ],
+    "skills": [
+      "react",
+      "vue"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Casanova Changeover",
+    "peopleIds": [
+      52,
+      83,
+      73
+    ],
+    "skills": [
+      "javascript",
+      "zig"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Bigfoot Project",
+    "peopleIds": [
+      80,
+      20
+    ],
+    "skills": [
+      "html",
+      "rust"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Bigfish Revision",
+    "peopleIds": [
+      11,
+      128,
+      124
+    ],
+    "skills": [
+      "react",
+      "rust"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Yellow Conversion",
+    "peopleIds": [
+      26,
+      82
+    ],
+    "skills": [
+      "COBOL",
+      "vue"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Wonderwall 3.5",
+    "peopleIds": [
+      19,
+      106
+    ],
+    "skills": [
+      "rxjs",
+      "COBOL",
+      "svn"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Lagos 2.0",
+    "peopleIds": [
+      74,
+      91,
+      100
+    ],
+    "skills": [
+      "vue",
+      "word"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Bigfish Rework",
+    "peopleIds": [
+      10,
+      65
+    ],
+    "skills": [
+      "IoT",
+      "blockchain",
+      "zig"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "IT Redesign",
+    "peopleIds": [
+      1,
+      98
+    ],
+    "skills": [
+      "C++",
+      "javascript"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Tokyo Rebranding",
+    "peopleIds": [
+      107,
+      87
+    ],
+    "skills": [
+      "C++",
+      "react"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "IT Rebranding",
+    "peopleIds": [
+      72,
+      27,
+      108
+    ],
+    "skills": [
+      "css",
+      "git",
+      "svn"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Lagos Conversion",
+    "peopleIds": [
+      107,
+      65
+    ],
+    "skills": [
+      "svg",
+      "javascript",
+      "C++"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Constantinople Overhaul",
+    "peopleIds": [
+      80,
+      119
+    ],
+    "skills": [
       "rust",
+      "dependency-injection"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Constantinople 2.0",
+    "peopleIds": [
+      52,
+      116,
+      55
+    ],
+    "skills": [
+      "zig",
       "typescript"
     ]
   },
   {
     "id": 59,
-    "name": "Simple Overhaul",
+    "name": "Canary 3.5",
     "peopleIds": [
-      44,
-      1,
-      89
+      133,
+      96,
+      62
     ],
     "skills": [
-      "react",
-      "git"
+      "word",
+      "svn"
     ]
   },
   {
     "id": 60,
-    "name": "Istanbul Redesign",
+    "name": "Box Rebranding",
     "peopleIds": [
-      127,
-      44,
-      62
+      29,
+      5,
+      94
     ],
     "skills": [
-      "svg",
-      "vue"
+      "blockchain",
+      "html",
+      "C"
     ]
   },
   {
     "id": 61,
-    "name": "Wonderwall Changeover",
+    "name": "ZigZag 3.0",
     "peopleIds": [
-      23,
-      7
+      114,
+      95,
+      79
     ],
     "skills": [
-      "git",
-      "word",
+      "COBOL",
       "powerpoint"
     ]
   },
   {
     "id": 62,
-    "name": "Wonderwall Overhaul",
+    "name": "Constantinople Conversion",
     "peopleIds": [
-      40,
-      34,
-      18
+      71,
+      56
     ],
     "skills": [
-      "angular",
-      "svn",
-      "typescript"
+      "IoT",
+      "vue",
+      "COBOL"
     ]
   },
   {
     "id": 63,
-    "name": "Constantinople Overhaul",
+    "name": "Chicago Rebranding",
     "peopleIds": [
-      100,
-      97,
-      73
+      119,
+      90
     ],
     "skills": [
-      "rxjs",
       "react",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 64,
-    "name": "Simple 2.0",
-    "peopleIds": [
-      115,
-      30,
-      116
-    ],
-    "skills": [
-      "css",
-      "powerpoint",
-      "svg"
-    ]
-  },
-  {
-    "id": 65,
-    "name": "Wonderwall Rebranding",
-    "peopleIds": [
-      13,
-      109,
-      114
-    ],
-    "skills": [
-      "rust",
-      "excel",
-      "angular"
-    ]
-  },
-  {
-    "id": 66,
-    "name": "Simple Renovation",
-    "peopleIds": [
-      64,
-      33
-    ],
-    "skills": [
-      "css",
-      "typescript",
-      "git"
-    ]
-  },
-  {
-    "id": 67,
-    "name": "Buffalo Renovation",
-    "peopleIds": [
-      56,
-      71
-    ],
-    "skills": [
-      "vue",
-      "angular",
-      "rxjs"
-    ]
-  },
-  {
-    "id": 68,
-    "name": "Seattle Rework",
-    "peopleIds": [
-      46,
-      4
-    ],
-    "skills": [
-      "angular",
-      "rust",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 69,
-    "name": "IT Rebranding",
-    "peopleIds": [
-      8,
-      7,
-      47
-    ],
-    "skills": [
-      "css",
-      "react",
-      "html"
-    ]
-  },
-  {
-    "id": 70,
-    "name": "Berlin Renovation",
-    "peopleIds": [
-      122,
-      50,
-      34
-    ],
-    "skills": [
-      "zig",
-      "javascript",
-      "rust"
-    ]
-  },
-  {
-    "id": 71,
-    "name": "Seattle Rebranding",
-    "peopleIds": [
-      101,
-      38
-    ],
-    "skills": [
-      "html",
-      "word",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 72,
-    "name": "Istanbul Redesign",
-    "peopleIds": [
-      53,
-      119
-    ],
-    "skills": [
-      "word",
-      "angular",
-      "javascript"
-    ]
-  },
-  {
-    "id": 73,
-    "name": "Buffalo Rebranding",
-    "peopleIds": [
-      7,
-      92
-    ],
-    "skills": [
-      "C#",
-      "zig",
-      "css"
-    ]
-  },
-  {
-    "id": 74,
-    "name": "Vista Revision",
-    "peopleIds": [
-      66,
-      43,
-      56
-    ],
-    "skills": [
-      "svg",
-      "css"
-    ]
-  },
-  {
-    "id": 75,
-    "name": "Buffalo Rework",
-    "peopleIds": [
-      50,
-      106,
-      83
-    ],
-    "skills": [
-      "zig",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 76,
-    "name": "Miami Redesign",
-    "peopleIds": [
-      135,
-      30
-    ],
-    "skills": [
-      "rust",
-      "rxjs",
-      "git"
-    ]
-  },
-  {
-    "id": 77,
-    "name": "Portland Changeover",
-    "peopleIds": [
-      125,
-      78,
-      112
-    ],
-    "skills": [
-      "rxjs",
-      "C#",
-      "css"
-    ]
-  },
-  {
-    "id": 78,
-    "name": "Portland Redesign",
-    "peopleIds": [
-      111,
-      59
-    ],
-    "skills": [
-      "word",
-      "javascript",
-      "excel"
-    ]
-  },
-  {
-    "id": 79,
-    "name": "Simple Rebranding",
-    "peopleIds": [
-      68,
-      70
-    ],
-    "skills": [
-      "vue",
-      "git",
-      "IoT"
-    ]
-  },
-  {
-    "id": 80,
-    "name": "Wonderwall 2.0",
-    "peopleIds": [
-      32,
-      17
-    ],
-    "skills": [
-      "html",
-      "svg",
-      "C++"
-    ]
-  },
-  {
-    "id": 81,
-    "name": "Vista Rework",
-    "peopleIds": [
-      108,
-      123,
-      34
-    ],
-    "skills": [
-      "zig",
-      "excel"
-    ]
-  },
-  {
-    "id": 82,
-    "name": "Portland Rebranding",
-    "peopleIds": [
-      34,
-      25,
-      112
-    ],
-    "skills": [
-      "angular",
-      "C#",
-      "angular"
-    ]
-  },
-  {
-    "id": 83,
-    "name": "Seattle Revision",
-    "peopleIds": [
-      37,
-      61
-    ],
-    "skills": [
-      "svn",
       "vue"
     ]
   },
   {
-    "id": 84,
-    "name": "Constantinople Rebranding",
+    "id": 64,
+    "name": "Canary Rebranding",
     "peopleIds": [
-      5,
-      10,
-      48
+      87,
+      84
     ],
     "skills": [
-      "git",
-      "rxjs",
+      "powerpoint",
+      "C++",
       "angular"
     ]
   },
   {
-    "id": 85,
-    "name": "Berlin Project",
+    "id": 65,
+    "name": "Box 3.5",
     "peopleIds": [
-      101,
-      104,
-      53
+      87,
+      84,
+      111
     ],
     "skills": [
-      "powerpoint",
-      "word"
+      "COBOL",
+      "IoT",
+      "C#"
     ]
   },
   {
-    "id": 86,
-    "name": "Portland Rebranding",
+    "id": 66,
+    "name": "Lagos 3.5",
     "peopleIds": [
       55,
-      110,
-      23
+      76,
+      10
     ],
     "skills": [
-      "word",
-      "powerpoint",
-      "word"
+      "C++",
+      "C#"
     ]
   },
   {
-    "id": 87,
-    "name": "Constantinople 2.0",
+    "id": 67,
+    "name": "Orange Renovation",
     "peopleIds": [
-      94,
-      108,
-      56
-    ],
-    "skills": [
-      "zig",
-      "dependency-injection",
-      "IoT"
-    ]
-  },
-  {
-    "id": 88,
-    "name": "Istanbul Changeover",
-    "peopleIds": [
-      47,
-      110,
-      64
+      67,
+      8,
+      134
     ],
     "skills": [
       "IoT",
+      "blockchain",
+      "react"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Houston Redesign",
+    "peopleIds": [
+      103,
+      113
+    ],
+    "skills": [
+      "svn",
+      "css"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "ZigZag 5.0",
+    "peopleIds": [
+      77,
+      75,
+      47
+    ],
+    "skills": [
+      "zig",
+      "rust"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Berlin Overhaul",
+    "peopleIds": [
+      90,
+      28,
+      34
+    ],
+    "skills": [
+      "vue",
+      "rust",
       "zig"
     ]
   },
   {
-    "id": 89,
-    "name": "Portland Conversion",
+    "id": 71,
+    "name": "Excalibur Overhaul",
     "peopleIds": [
-      43,
-      46,
-      82
+      134,
+      131
     ],
     "skills": [
-      "html",
-      "C#",
+      "excel",
+      "git"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Portland Conversion",
+    "peopleIds": [
+      12,
+      14,
+      96
+    ],
+    "skills": [
+      "svg",
+      "typescript",
+      "excel"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Yellow Rework",
+    "peopleIds": [
+      126,
+      93,
+      78
+    ],
+    "skills": [
+      "IoT",
+      "word",
       "svn"
     ]
   },
   {
-    "id": 90,
-    "name": "Buffalo Conversion",
+    "id": 74,
+    "name": "Complex Rebranding",
     "peopleIds": [
-      100,
-      123
+      125,
+      46
+    ],
+    "skills": [
+      "zig",
+      "blockchain",
+      "angular"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Casanova Rebranding",
+    "peopleIds": [
+      93,
+      39
+    ],
+    "skills": [
+      "excel",
+      "git"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Yellow Redesign",
+    "peopleIds": [
+      23,
+      58
+    ],
+    "skills": [
+      "dependency-injection",
+      "blockchain",
+      "zig"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Cairo 3.5",
+    "peopleIds": [
+      111,
+      99
+    ],
+    "skills": [
+      "zig",
+      "angular"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Bigfoot Conversion",
+    "peopleIds": [
+      44,
+      1
+    ],
+    "skills": [
+      "html",
+      "react"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Whistler",
+    "peopleIds": [
+      30,
+      100
+    ],
+    "skills": [
+      "blockchain",
+      "git"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Manila Redesign",
+    "peopleIds": [
+      47,
+      12,
+      2
+    ],
+    "skills": [
+      "word",
+      "css",
+      "rust"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Yellow Renovation",
+    "peopleIds": [
+      116,
+      8,
+      4
+    ],
+    "skills": [
+      "svg",
+      "dependency-injection",
+      "C"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Manila",
+    "peopleIds": [
+      80,
+      58
+    ],
+    "skills": [
+      "html",
+      "git",
+      "IoT"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Casanova 2.0",
+    "peopleIds": [
+      82,
+      40,
+      6
+    ],
+    "skills": [
+      "rxjs",
+      "blockchain",
+      "excel"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Cairo Rework",
+    "peopleIds": [
+      83,
+      110
+    ],
+    "skills": [
+      "javascript",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Bigfish Revamp",
+    "peopleIds": [
+      18,
+      127,
+      4
     ],
     "skills": [
       "C#",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "IT Changeover",
+    "peopleIds": [
+      135,
+      129,
+      81
+    ],
+    "skills": [
+      "angular",
+      "svn",
+      "blockchain"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Lagos Changeover",
+    "peopleIds": [
+      79,
+      69
+    ],
+    "skills": [
+      "vue",
+      "powerpoint",
+      "javascript"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Cairo 5.0",
+    "peopleIds": [
+      63,
+      19
+    ],
+    "skills": [
       "IoT",
+      "javascript"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Bigfish Overhaul",
+    "peopleIds": [
+      41,
+      112,
+      122
+    ],
+    "skills": [
+      "svg",
+      "dependency-injection",
+      "powerpoint"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Chicago",
+    "peopleIds": [
+      8,
+      115
+    ],
+    "skills": [
+      "C#",
+      "zig",
       "css"
     ]
   },
   {
     "id": 91,
-    "name": "Simple Renovation",
+    "name": "Constantinople Rebranding",
     "peopleIds": [
-      93,
-      14
+      86,
+      57
     ],
     "skills": [
-      "excel",
-      "C#",
-      "zig"
+      "javascript",
+      "svg"
     ]
   },
   {
     "id": 92,
-    "name": "Wonderwall Overhaul",
+    "name": "Orange 2.0",
     "peopleIds": [
-      40,
-      125
+      88,
+      110,
+      94
     ],
     "skills": [
-      "C#",
-      "javascript",
-      "rust"
+      "excel",
+      "rxjs",
+      "IoT"
     ]
   },
   {
     "id": 93,
-    "name": "Vista Changeover",
+    "name": "Bigfoot Rework",
     "peopleIds": [
-      76,
-      28
+      44,
+      38,
+      17
     ],
     "skills": [
+      "excel",
       "C#",
-      "dependency-injection"
+      "C++"
     ]
   },
   {
     "id": 94,
-    "name": "Istanbul Conversion",
+    "name": "Orange",
     "peopleIds": [
-      24,
-      122,
-      9
+      102,
+      103
     ],
     "skills": [
-      "html",
-      "rust"
+      "zig",
+      "dependency-injection"
     ]
   },
   {
     "id": 95,
-    "name": "Chicago 2.0",
+    "name": "Bigfoot 3.0",
     "peopleIds": [
-      79,
-      134,
-      44
+      59,
+      132,
+      4
     ],
     "skills": [
       "typescript",
-      "react"
+      "rust",
+      "html"
     ]
   },
   {
     "id": 96,
     "name": "Seattle Conversion",
     "peopleIds": [
-      48,
-      31,
-      45
+      9,
+      122,
+      123
     ],
     "skills": [
-      "rxjs",
-      "C#",
-      "git"
+      "zig",
+      "C++"
     ]
   },
   {
     "id": 97,
-    "name": "IT Rebranding",
+    "name": "Box Revision",
     "peopleIds": [
-      67,
-      29,
-      26
+      22,
+      28,
+      120
     ],
     "skills": [
-      "excel",
-      "svg"
+      "zig",
+      "git"
     ]
   },
   {
     "id": 98,
-    "name": "Constantinople Redesign",
+    "name": "Wombat 3.0",
     "peopleIds": [
-      77,
-      76
+      75,
+      110,
+      37
     ],
     "skills": [
-      "word",
-      "svn",
-      "excel"
+      "dependency-injection",
+      "zig"
     ]
   },
   {
     "id": 99,
-    "name": "Chicago Revision",
+    "name": "Whistler Rework",
     "peopleIds": [
-      114,
-      67,
-      131
+      36,
+      76,
+      1
     ],
     "skills": [
-      "angular",
-      "IoT"
+      "blockchain",
+      "svn"
     ]
   },
   {
     "id": 100,
-    "name": "Simple Rework",
+    "name": "Chicago Conversion",
     "peopleIds": [
-      110,
-      104,
-      122
+      117,
+      83,
+      88
     ],
     "skills": [
-      "excel",
-      "C#",
-      "html"
+      "COBOL",
+      "word"
     ]
   },
   {
     "id": 101,
-    "name": "Seattle Changeover",
+    "name": "Lima Revision",
     "peopleIds": [
-      65,
-      126,
-      1
+      41,
+      91,
+      47
     ],
     "skills": [
-      "typescript",
-      "git",
-      "C#"
+      "svn",
+      "react"
     ]
   },
   {
     "id": 102,
-    "name": "Buffalo Rebranding",
+    "name": "Excalibur Conversion",
     "peopleIds": [
-      74,
-      80
+      1,
+      10
     ],
     "skills": [
-      "git",
-      "excel"
+      "css",
+      "angular",
+      "C#"
     ]
   },
   {
     "id": 103,
-    "name": "IT Redesign",
+    "name": "Manila Revision",
     "peopleIds": [
-      123,
-      117,
-      38
+      67,
+      100,
+      68
     ],
     "skills": [
-      "javascript",
-      "rust"
+      "IoT",
+      "powerpoint",
+      "git"
     ]
   },
   {
     "id": 104,
-    "name": "Berlin 2.0",
+    "name": "Bigfoot 5.0",
     "peopleIds": [
-      117,
-      13
+      60,
+      116
     ],
     "skills": [
-      "html",
+      "zig",
+      "angular",
       "C++"
     ]
   },
   {
     "id": 105,
-    "name": "Buffalo Revision",
+    "name": "Jakarta 3.0",
     "peopleIds": [
-      123,
-      31
+      13,
+      107,
+      109
     ],
     "skills": [
-      "dependency-injection",
-      "excel"
+      "C++",
+      "C",
+      "svg"
     ]
   },
   {
     "id": 106,
-    "name": "Wonderwall Project",
+    "name": "Constantinople 5.0",
     "peopleIds": [
-      41,
-      51,
-      94
+      88,
+      39,
+      15
     ],
     "skills": [
-      "dependency-injection",
-      "C#",
-      "C++"
+      "powerpoint",
+      "svn"
     ]
   },
   {
     "id": 107,
-    "name": "Chicago Revision",
+    "name": "Bigfoot Rebranding",
     "peopleIds": [
-      62,
-      122
+      20,
+      43,
+      10
     ],
     "skills": [
-      "zig",
+      "javascript",
+      "rust",
       "word"
     ]
   },
   {
     "id": 108,
-    "name": "Seattle Rework",
+    "name": "Istanbul 3.0",
     "peopleIds": [
-      32,
-      99,
-      44
+      90,
+      57
     ],
     "skills": [
-      "C#",
-      "C++",
-      "blockchain"
+      "dependency-injection",
+      "C++"
     ]
   },
   {
     "id": 109,
-    "name": "Miami Rebranding",
+    "name": "Orange 3.5",
     "peopleIds": [
-      17,
-      69,
-      45
+      33,
+      77,
+      110
     ],
     "skills": [
-      "css",
-      "vue",
-      "zig"
+      "C++",
+      "COBOL",
+      "angular"
     ]
   },
   {
     "id": 110,
-    "name": "Constantinople Renovation",
+    "name": "Simple Changeover",
     "peopleIds": [
-      116,
-      26
+      44,
+      5
     ],
     "skills": [
-      "react",
-      "zig"
+      "zig",
+      "word"
     ]
   },
   {
     "id": 111,
-    "name": "Seattle 2.0",
+    "name": "Canary Project",
     "peopleIds": [
-      57,
-      95
+      42,
+      81
     ],
     "skills": [
-      "IoT",
-      "rust",
-      "vue"
+      "angular",
+      "svg",
+      "C"
     ]
   },
   {
     "id": 112,
-    "name": "Istanbul Rebranding",
+    "name": "Vista 5.0",
     "peopleIds": [
-      108,
-      110
+      113,
+      106,
+      119
     ],
     "skills": [
       "vue",
-      "zig",
-      "IoT"
+      "excel",
+      "blockchain"
     ]
   },
   {
     "id": 113,
-    "name": "Berlin Redesign",
+    "name": "Lagos Project",
     "peopleIds": [
-      21,
-      99,
-      34
+      57,
+      31
     ],
     "skills": [
-      "css",
-      "C++",
+      "vue",
+      "typescript",
       "powerpoint"
     ]
   },
   {
     "id": 114,
-    "name": "Constantinople Project",
+    "name": "Manila 2.0",
     "peopleIds": [
-      79,
-      54
+      37,
+      57,
+      114
     ],
     "skills": [
-      "vue",
-      "C#"
+      "javascript",
+      "react",
+      "C++"
     ]
   },
   {
     "id": 115,
-    "name": "Seattle Rebranding",
+    "name": "Wombat Redesign",
     "peopleIds": [
-      121,
+      48,
       128,
-      1
+      15
     ],
     "skills": [
-      "C++",
-      "javascript"
+      "word",
+      "html"
     ]
   },
   {
     "id": 116,
-    "name": "Simple Changeover",
+    "name": "Tokyo Rework",
     "peopleIds": [
-      52,
-      86
+      89,
+      80
     ],
     "skills": [
-      "angular",
-      "git",
-      "word"
+      "dependency-injection",
+      "C#",
+      "html"
     ]
   },
   {
     "id": 117,
-    "name": "Istanbul Changeover",
+    "name": "Box Project",
     "peopleIds": [
-      55,
-      66,
-      83
+      113,
+      26
     ],
     "skills": [
-      "C#",
-      "javascript",
-      "svg"
+      "svn",
+      "html"
     ]
   },
   {
     "id": 118,
-    "name": "Berlin 2.0",
+    "name": "Constantinople Renovation",
     "peopleIds": [
-      99,
-      41
+      88,
+      36
     ],
     "skills": [
-      "dependency-injection",
-      "word",
-      "dependency-injection"
+      "css",
+      "javascript",
+      "svn"
     ]
   },
   {
     "id": 119,
-    "name": "Istanbul Project",
-    "peopleIds": [
-      101,
-      127,
-      74
-    ],
-    "skills": [
-      "angular",
-      "svg"
-    ]
-  },
-  {
-    "id": 120,
-    "name": "Seattle Renovation",
-    "peopleIds": [
-      2,
-      57,
-      62
-    ],
-    "skills": [
-      "powerpoint",
-      "git"
-    ]
-  },
-  {
-    "id": 121,
-    "name": "Portland 2.0",
-    "peopleIds": [
-      32,
-      21,
-      92
-    ],
-    "skills": [
-      "C++",
-      "IoT",
-      "IoT"
-    ]
-  },
-  {
-    "id": 122,
-    "name": "Portland Project",
-    "peopleIds": [
-      36,
-      37,
-      61
-    ],
-    "skills": [
-      "C#",
-      "svg"
-    ]
-  },
-  {
-    "id": 123,
-    "name": "Vista Changeover",
-    "peopleIds": [
-      66,
-      47,
-      116
-    ],
-    "skills": [
-      "typescript",
-      "react"
-    ]
-  },
-  {
-    "id": 124,
-    "name": "Berlin Revision",
-    "peopleIds": [
-      128,
-      79,
-      97
-    ],
-    "skills": [
-      "excel",
-      "vue",
-      "IoT"
-    ]
-  },
-  {
-    "id": 125,
-    "name": "Chicago Redesign",
+    "name": "Portland",
     "peopleIds": [
       22,
-      84,
-      78
+      122
     ],
     "skills": [
-      "IoT",
+      "blockchain",
       "zig",
       "css"
     ]
   },
   {
-    "id": 126,
-    "name": "Constantinople Rebranding",
+    "id": 120,
+    "name": "Casanova 3.0",
     "peopleIds": [
-      30,
-      81,
-      98
+      99,
+      110,
+      14
     ],
     "skills": [
+      "git",
+      "C#",
+      "zig"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Whistler 3.0",
+    "peopleIds": [
+      122,
+      44,
+      70
+    ],
+    "skills": [
+      "vue",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Red 3.5",
+    "peopleIds": [
+      43,
+      97
+    ],
+    "skills": [
+      "react",
+      "git",
+      "powerpoint"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Portland Renovation",
+    "peopleIds": [
+      61,
+      27
+    ],
+    "skills": [
+      "rxjs",
+      "word",
+      "angular"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Lima 3.5",
+    "peopleIds": [
+      129,
+      29
+    ],
+    "skills": [
+      "css",
+      "svn"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Bigfish Changeover",
+    "peopleIds": [
+      19,
+      105
+    ],
+    "skills": [
+      "IoT",
+      "dependency-injection",
+      "powerpoint"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Cairo",
+    "peopleIds": [
+      52,
+      133
+    ],
+    "skills": [
+      "css",
       "typescript",
-      "blockchain",
-      "rxjs"
+      "dependency-injection"
     ]
   },
   {
     "id": 127,
-    "name": "Chicago 2.0",
+    "name": "Cairo Changeover",
     "peopleIds": [
-      126,
-      96
+      74,
+      51,
+      90
     ],
     "skills": [
       "svn",
-      "IoT"
+      "zig"
     ]
   },
   {
     "id": 128,
-    "name": "Simple Renovation",
+    "name": "Miami Revamp",
     "peopleIds": [
-      103,
-      133
+      132,
+      56,
+      57
     ],
     "skills": [
-      "word",
-      "blockchain"
+      "vue",
+      "dependency-injection",
+      "powerpoint"
     ]
   },
   {
     "id": 129,
-    "name": "Portland Project",
+    "name": "Berlin Redesign",
     "peopleIds": [
-      49,
-      51,
-      104
+      21,
+      18,
+      3
     ],
     "skills": [
-      "svn",
+      "html",
       "C#"
     ]
   },
   {
     "id": 130,
-    "name": "Portland Renovation",
+    "name": "Manila Overhaul",
     "peopleIds": [
-      45,
-      103
+      56,
+      99,
+      18
     ],
     "skills": [
-      "svg",
-      "angular"
+      "COBOL",
+      "excel",
+      "javascript"
     ]
   },
   {
     "id": 131,
-    "name": "Miami Overhaul",
+    "name": "Berlin 5.0",
     "peopleIds": [
-      8,
-      43
+      19,
+      116,
+      70
     ],
     "skills": [
-      "typescript",
-      "javascript",
-      "git"
+      "html",
+      "zig"
     ]
   },
   {
     "id": 132,
-    "name": "Chicago Project",
+    "name": "Bigfoot",
     "peopleIds": [
-      97,
-      125,
-      9
+      56,
+      14
     ],
     "skills": [
-      "angular",
-      "html",
-      "rust"
+      "excel",
+      "vue",
+      "rxjs"
     ]
   },
   {
     "id": 133,
-    "name": "IT Rework",
+    "name": "Whistler 3.5",
     "peopleIds": [
-      25,
-      34
+      90,
+      25
     ],
     "skills": [
       "angular",
-      "html"
+      "C"
     ]
   },
   {
     "id": 134,
-    "name": "Seattle Renovation",
+    "name": "Vista Rebranding",
     "peopleIds": [
-      5,
-      4
+      54,
+      81,
+      105
+    ],
+    "skills": [
+      "git",
+      "C++"
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Lima",
+    "peopleIds": [
+      56,
+      117,
+      57
+    ],
+    "skills": [
+      "blockchain",
+      "typescript",
+      "COBOL"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Yellow 3.5",
+    "peopleIds": [
+      70,
+      101
+    ],
+    "skills": [
+      "IoT",
+      "svg",
+      "css"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Red Rework",
+    "peopleIds": [
+      65,
+      98,
+      10
+    ],
+    "skills": [
+      "typescript",
+      "blockchain"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Seattle 3.5",
+    "peopleIds": [
+      61,
+      73,
+      70
+    ],
+    "skills": [
+      "html",
+      "svg"
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Miami Overhaul",
+    "peopleIds": [
+      83,
+      46,
+      67
+    ],
+    "skills": [
+      "html",
+      "javascript"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Seattle Project",
+    "peopleIds": [
+      76,
+      61,
+      18
+    ],
+    "skills": [
+      "COBOL",
+      "svn"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Bigfoot Renovation",
+    "peopleIds": [
+      8,
+      101
+    ],
+    "skills": [
+      "C++",
+      "javascript",
+      "html"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Vista 3.0",
+    "peopleIds": [
+      128,
+      21,
+      123
+    ],
+    "skills": [
+      "angular",
+      "git"
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Istanbul Rebranding",
+    "peopleIds": [
+      81,
+      81
     ],
     "skills": [
       "IoT",
@@ -1751,134 +1856,15 @@ export const projects = [
     ]
   },
   {
-    "id": 135,
-    "name": "Portland Rework",
-    "peopleIds": [
-      47,
-      40,
-      19
-    ],
-    "skills": [
-      "powerpoint",
-      "IoT",
-      "powerpoint"
-    ]
-  },
-  {
-    "id": 136,
-    "name": "Buffalo Renovation",
-    "peopleIds": [
-      96,
-      23
-    ],
-    "skills": [
-      "rxjs",
-      "angular",
-      "dependency-injection"
-    ]
-  },
-  {
-    "id": 137,
-    "name": "Wonderwall Changeover",
-    "peopleIds": [
-      101,
-      124,
-      55
-    ],
-    "skills": [
-      "C++",
-      "css",
-      "C++"
-    ]
-  },
-  {
-    "id": 138,
-    "name": "Vista Changeover",
-    "peopleIds": [
-      96,
-      134
-    ],
-    "skills": [
-      "powerpoint",
-      "css",
-      "zig"
-    ]
-  },
-  {
-    "id": 139,
-    "name": "Buffalo Rework",
-    "peopleIds": [
-      65,
-      121
-    ],
-    "skills": [
-      "IoT",
-      "blockchain"
-    ]
-  },
-  {
-    "id": 140,
-    "name": "Berlin Redesign",
-    "peopleIds": [
-      32,
-      116
-    ],
-    "skills": [
-      "angular",
-      "css",
-      "svg"
-    ]
-  },
-  {
-    "id": 141,
-    "name": "Vista Conversion",
-    "peopleIds": [
-      89,
-      76,
-      45
-    ],
-    "skills": [
-      "rxjs",
-      "javascript",
-      "angular"
-    ]
-  },
-  {
-    "id": 142,
-    "name": "IT Rework",
-    "peopleIds": [
-      63,
-      3,
-      91
-    ],
-    "skills": [
-      "rxjs",
-      "blockchain"
-    ]
-  },
-  {
-    "id": 143,
-    "name": "Vista Revision",
-    "peopleIds": [
-      26,
-      121
-    ],
-    "skills": [
-      "vue",
-      "svn"
-    ]
-  },
-  {
     "id": 144,
-    "name": "Buffalo Project",
+    "name": "Vista",
     "peopleIds": [
-      33,
-      38
+      55,
+      109
     ],
     "skills": [
-      "dependency-injection",
-      "powerpoint",
-      "html"
+      "excel",
+      "svg"
     ]
   }
 ];

@@ -22,6 +22,7 @@ const firstNames = [
   "Daniel",
   "Daniela",
   "Dave",
+  "Dianne",
   "Elena",
   "Emma",
   "Eric",
@@ -30,8 +31,12 @@ const firstNames = [
   "Henry",
   "Heidi",
   "Jake",
+  "Jerry",
+  "Joan",
   "John",
+  "Julia",
   "Leslie",
+  "Mia",
   "Mike",
   "Sally",
   "Sam",
@@ -44,16 +49,21 @@ const firstNames = [
 ];
 
 const lastNames = [
+  "Adams",
   "Andrews",
+  "Bailey",
+  "Blue Bird",
   "Burke",
   "Clarke",
   "Craig",
+  "Carr",
   "Freeman",
   "Harvey",
   "Jennings",
   "Lewis",
   "Murphey",
   "Mustermann",
+  "Owens",
   "Perez",
   "Price",
   "Schulte",
@@ -61,27 +71,53 @@ const lastNames = [
   "Snow",
   "Snyder",
   "Turner",
+  "Warren",
   "West",
   "Williams",
 ];
 
 const projectPrefixes = [
   "Berlin",
+  "Bigfish",
+  "Bigfoot",
+  "Box",
   "Buffalo",
+  "Cairo",
+  "Canary",
+  "Casanova",
   "Chicago",
+  "Complex",
   "Constantinople",
+  "Excalibur",
+  "Houston",
   "Istanbul",
   "IT",
+  "Jakarta",
+  "Lagos",
+  "Lima",
+  "Manila",
   "Miami",
+  "Orange",
+  "Orleans",
   "Portland",
+  "Red",
   "Simple",
   "Seattle",
+  "Tokyo",
   "Vista",
+  "Whistler",
+  "Wombat",
   "Wonderwall",
+  "Yellow",
+  "ZigZag",
 ];
 
 const projectPostfixes = [
+  "",
   "2.0",
+  "3.0",
+  "3.5",
+  "5.0",
   "Conversion",
   "Changeover",
   "Overhaul",
@@ -90,14 +126,17 @@ const projectPostfixes = [
   "Rework",
   "Rebranding",
   "Renovation",
+  "Revamp",
   "Revision",
 ];
 
 const skills = [
   "angular",
   "blockchain",
+  "C",
   "C#",
   "C++",
+  "COBOL",
   "css",
   "dependency-injection",
   "excel",
@@ -129,6 +168,14 @@ for (let i = 0; i < PEOPLE_COUNT; i++) {
 
 const projects = [];
 
+function getProjectName(): string {
+  return (
+    projectPrefixes[nextInt(projectPrefixes.length)] +
+    " " +
+    projectPostfixes[nextInt(projectPostfixes.length)]
+  ).trimEnd();
+}
+
 for (let i = 0; i < PROJECT_COUNT; i++) {
   const projectPeopleCount =
     nextInt(MAX_PEOPLE_COUNT - MIN_PEOPLE_COUNT) + MIN_PEOPLE_COUNT;
@@ -143,15 +190,24 @@ for (let i = 0; i < PROJECT_COUNT; i++) {
   const projectSkills: string[] = [];
 
   for (let j = 0; j < projectSkillCount; j++) {
-    projectSkills.push(skills[nextInt(skills.length)]);
+    let skill = skills[nextInt(skills.length)];
+
+    while (projectSkills.includes(skill)) {
+      skill = skills[nextInt(skills.length)];
+    }
+
+    projectSkills.push(skill);
+  }
+
+  let projectName = getProjectName();
+
+  while (projects.filter((x) => x.name === projectName).length >= 1) {
+    projectName = getProjectName();
   }
 
   projects.push({
     id: i + 1,
-    name:
-      projectPrefixes[nextInt(projectPrefixes.length)] +
-      " " +
-      projectPostfixes[nextInt(projectPostfixes.length)],
+    name: projectName,
     peopleIds: projectPeopleIds,
     skills: projectSkills,
   });

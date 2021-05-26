@@ -1,15 +1,33 @@
 <template>
-  <div class="projects"></div>
+  <div class="projects container">
+    <header class="border-bottom">
+      <h2><i class="bi-card-checklist"></i> Projects</h2>
+    </header>
+    <project-list :projects="projects"></project-list>
+  </div>
 </template>
 
 <script lang="ts">
+import { ProjectService, ProjectServiceToken } from "@/services/projectService";
+import { inject } from "inversify-props";
 import { Options, Vue } from "vue-class-component";
+import { Project } from "../types/project";
+import ProjectList from "@/components/ProjectList.vue";
 
 @Options({
-  components: {},
-  props: {},
+  components: { ProjectList },
+  props: {
+    projects: Array,
+  },
 })
 export default class Projects extends Vue {
-  public created(): void {}
+  @inject(ProjectServiceToken) private _projectService!: ProjectService;
+
+  public projects: Project[] = [];
+
+  public created(): void {
+    this.projects = this._projectService.getProjects();
+    this.projects.sort((a, b) => a.name.localeCompare(b.name));
+  }
 }
 </script>

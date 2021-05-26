@@ -1,17 +1,19 @@
 <template>
-  <table class="table">
+  <table class="table table-striped">
     <thead>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Projects</th>
-      <th scope="col">Skills</th>
+      <tr>
+        <th class="first-name" scope="col">First Name</th>
+        <th class="last-name" scope="col">Last Name</th>
+        <th class="project-count" scope="col">Projects</th>
+        <th class="skills" scope="col">Skills</th>
+      </tr>
     </thead>
     <tbody>
       <tr v-for="person in people" :key="person">
-        <td>{{ person.firstName }}</td>
-        <td>{{ person.lastName }}</td>
-        <td>{{ getProjectCount(person) }}</td>
-        <td>
+        <td class="first-name">{{ person.firstName }}</td>
+        <td class="last-name">{{ person.lastName }}</td>
+        <td class="project-count">{{ getProjectCount(person) }}</td>
+        <td class="skills">
           <ul>
             <li v-for="skill in getSkills(person)" :key="skill">{{ skill }}</li>
           </ul>
@@ -20,6 +22,36 @@
     </tbody>
   </table>
 </template>
+
+<style scoped lang="scss">
+ul {
+  display: inline;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline;
+  }
+
+  li:after {
+    content: ", ";
+  }
+
+  li:last-child::after {
+    content: "";
+  }
+}
+
+.first-name,
+.last-name {
+  width: 140px;
+}
+
+.project-count {
+  width: 80px;
+  text-align: center;
+}
+</style>
 
 <script lang="ts">
 import { Person } from "@/types/person";
@@ -45,7 +77,9 @@ export default class PeopleList extends Vue {
   }
 
   public getSkills(person: Person): string[] {
-    return this._projectsService.getSkills(person);
+    const skills = this._projectsService.getSkills(person);
+    skills.sort();
+    return skills;
   }
 }
 </script>
