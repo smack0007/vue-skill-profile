@@ -1,33 +1,67 @@
 <template>
   <div class="people container">
-    <header class="border-bottom">
-      <h2><i class="bi-person"></i> People</h2>
+    <header class="border-bottom row align-items-center fs-1">
+      <div class="col"><i class="bi-person"></i> People</div>
+      <div class="col-auto">
+        <div class="input-group search-box">
+          <span class="input-group-text bi-search"></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search"
+            aria-label="Search"
+            v-model="search"
+            @input="onSearchChange()"
+          />
+        </div>
+      </div>
     </header>
     <people-list :people="people"></people-list>
   </div>
 </template>
 
+<style scoped lang="scss">
+.search-box {
+  max-width: 400px;
+}
+</style>
+
 <script lang="ts">
 import { inject } from "inversify-props";
 import { Options, Vue } from "vue-class-component";
-import { Person } from "@/types/person";
+import { PersonModel } from "@/models/personModel";
 import { PeopleService, PeopleServiceToken } from "@/services/peopleService";
 import PeopleList from "@/components/PeopleList.vue";
+import { ProjectService, ProjectServiceToken } from "@/services/projectService";
 
 @Options({
   components: { PeopleList },
   props: {
     people: Array,
+    search: String,
   },
 })
 export default class People extends Vue {
   @inject(PeopleServiceToken) private _peopleService!: PeopleService;
+  @inject(ProjectServiceToken) private _projectsService!: ProjectService;
 
-  public people: Person[] = [];
+  private _allPeople: PersonModel[] = [];
+  public people: PersonModel[] = [];
+
+  public search: string = "";
 
   public created(): void {
-    this.people = this._peopleService.getPeople();
-    this.people.sort((a, b) => {
+    this._allPeople = this._peopleService.getPeople().map((x) => {
+      const skills = this._projectsService.getSkills(x);
+      skills.sort();
+
+      return {
+        ...x,
+        projectCount: this._projectsService.getProjectCount(x),
+        skills,
+      };
+    });
+    this._allPeople.sort((a, b) => {
       let result = a.lastName.localeCompare(b.lastName);
 
       if (result === 0) {
@@ -36,6 +70,21 @@ export default class People extends Vue {
 
       return result;
     });
+
+    this.people = [...this._allPeople];
+  }
+
+  public onSearchChange(): void {
+    const searchFor = this.search.toUpperCase();
+
+    this.people = [
+      ...this._allPeople.filter(
+        (x) =>
+          x.firstName.toUpperCase().includes(searchFor) ||
+          x.lastName.toUpperCase().includes(searchFor) ||
+          x.skills.some((y) => y.toUpperCase().includes(searchFor))
+      ),
+    ];
   }
 }
 </script>

@@ -12,10 +12,10 @@
       <tr v-for="person in people" :key="person">
         <td class="first-name">{{ person.firstName }}</td>
         <td class="last-name">{{ person.lastName }}</td>
-        <td class="project-count">{{ getProjectCount(person) }}</td>
+        <td class="project-count">{{ person.projectCount }}</td>
         <td class="skills">
           <ul>
-            <li v-for="skill in getSkills(person)" :key="skill">{{ skill }}</li>
+            <li v-for="skill in person.skills" :key="skill">{{ skill }}</li>
           </ul>
         </td>
       </tr>
@@ -54,13 +54,8 @@ ul {
 </style>
 
 <script lang="ts">
-import { Person } from "@/types/person";
-import { Inject } from "inversify-props";
+import { PersonModel } from "@/models/personModel";
 import { Options, Vue } from "vue-class-component";
-import {
-  ProjectService,
-  ProjectServiceToken,
-} from "../services/projectService";
 
 @Options({
   props: {
@@ -68,18 +63,6 @@ import {
   },
 })
 export default class PeopleList extends Vue {
-  @Inject(ProjectServiceToken) private _projectsService!: ProjectService;
-
-  public people: Person[] = [];
-
-  public getProjectCount(person: Person): number {
-    return this._projectsService.getProjectCount(person);
-  }
-
-  public getSkills(person: Person): string[] {
-    const skills = this._projectsService.getSkills(person);
-    skills.sort();
-    return skills;
-  }
+  public people: PersonModel[] = [];
 }
 </script>
