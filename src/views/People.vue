@@ -63,8 +63,7 @@ export default class People extends Vue {
     this.people = [
       ...this.allPeople.filter(
         (x) =>
-          x.firstName.toUpperCase().includes(searchFor) ||
-          x.lastName.toUpperCase().includes(searchFor) ||
+          x.name.toUpperCase().includes(searchFor) ||
           x.skills.some((y) => y.toUpperCase().includes(searchFor))
       ),
     ];

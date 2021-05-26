@@ -18,7 +18,7 @@
         <td class="people">
           <ul>
             <li v-for="person in project.people" :key="person">
-              {{ person.firstName }} {{ person.lastName }}
+              {{ person.name }}
             </li>
           </ul>
         </td>

@@ -59,11 +59,7 @@ export default class Projects extends Vue {
         (x) =>
           x.name.toUpperCase().includes(searchFor) ||
           x.skills.some((y) => y.toUpperCase().includes(searchFor)) ||
-          x.people.some(
-            (y) =>
-              y.firstName.toUpperCase().includes(searchFor) ||
-              y.lastName.toUpperCase().includes(searchFor)
-          )
+          x.people.some((y) => y.name.toUpperCase().includes(searchFor))
       ),
     ];
   }

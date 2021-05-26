@@ -30,10 +30,12 @@ export class PeopleServiceImpl implements PeopleService {
       .get<ProjectService>(ProjectServiceToken)
       .getPersonProjectInfo(person.id);
 
-    return {
-      ...person,
-      projectCount: projectInfo.projectCount,
-      skills: projectInfo.skills,
-    };
+    return new PersonModel(
+      person.id,
+      person.firstName,
+      person.lastName,
+      projectInfo.projectCount,
+      projectInfo.skills
+    );
   }
 }
