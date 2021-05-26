@@ -1,7 +1,7 @@
 <template>
   <div class="home container">
-    <header class="border-bottom">
-      <h2><i class="bi-house"></i> Home</h2>
+    <header class="border-bottom row align-items-center fs-1">
+      <div class="col"><i class="bi-house"></i> Home</div>
     </header>
     <div class="container bg-light mt-4 rounded-3">
       <div class="row">
@@ -36,8 +36,9 @@ a:hover span {
 </style>
 
 <script lang="ts">
-import { PeopleService, PeopleServiceToken } from "@/services/peopleService";
-import { ProjectService, ProjectServiceToken } from "@/services/projectService";
+import { PeopleService } from "@/services/peopleService";
+import { ProjectService } from "@/services/projectService";
+import { PeopleServiceToken, ProjectServiceToken } from "@/services/tokens";
 import { inject } from "inversify-props";
 import { Options, Vue } from "vue-class-component";
 

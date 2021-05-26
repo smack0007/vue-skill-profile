@@ -3,39 +3,28 @@
     <header class="border-bottom row align-items-center fs-1">
       <div class="col"><i class="bi-person"></i> People</div>
       <div class="col-auto">
-        <div class="input-group search-box">
-          <span class="input-group-text bi-search"></span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Search"
-            aria-label="Search"
-            v-model="search"
-            @input="onSearchChange()"
-          />
-        </div>
+        <search-box
+          :value="search"
+          @value-changed="onSearchChanged"
+        ></search-box>
       </div>
     </header>
     <people-list :people="people"></people-list>
   </div>
 </template>
 
-<style scoped lang="scss">
-.search-box {
-  max-width: 400px;
-}
-</style>
-
 <script lang="ts">
 import { inject } from "inversify-props";
 import { Options, Vue } from "vue-class-component";
 import { PersonModel } from "@/models/personModel";
-import { PeopleService, PeopleServiceToken } from "@/services/peopleService";
+import { PeopleService } from "@/services/peopleService";
+import { ProjectService } from "@/services/projectService";
+import { PeopleServiceToken, ProjectServiceToken } from "@/services/tokens";
 import PeopleList from "@/components/PeopleList.vue";
-import { ProjectService, ProjectServiceToken } from "@/services/projectService";
+import SearchBox from "@/components/SearchBox.vue";
 
 @Options({
-  components: { PeopleList },
+  components: { PeopleList, SearchBox },
   props: {
     people: Array,
     search: String,
@@ -51,16 +40,8 @@ export default class People extends Vue {
   public search: string = "";
 
   public created(): void {
-    this.allPeople = this._peopleService.getPeople().map((x) => {
-      const skills = this._projectsService.getSkills(x);
-      skills.sort();
+    this.allPeople = this._peopleService.getPeople();
 
-      return {
-        ...x,
-        projectCount: this._projectsService.getProjectCount(x),
-        skills,
-      };
-    });
     this.allPeople.sort((a, b) => {
       let result = a.lastName.localeCompare(b.lastName);
 
@@ -74,7 +55,9 @@ export default class People extends Vue {
     this.people = [...this.allPeople];
   }
 
-  public onSearchChange(): void {
+  public onSearchChanged(value: string): void {
+    this.search = value;
+
     const searchFor = this.search.toUpperCase();
 
     this.people = [

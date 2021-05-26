@@ -4,6 +4,7 @@
       <tr>
         <th class="name" scope="col">Name</th>
         <th class="skills" scope="col">Skills</th>
+        <th class="people" scope="col">People</th>
       </tr>
     </thead>
     <tbody>
@@ -12,6 +13,13 @@
         <td class="skills">
           <ul>
             <li v-for="skill in project.skills" :key="skill">{{ skill }}</li>
+          </ul>
+        </td>
+        <td class="people">
+          <ul>
+            <li v-for="person in project.people" :key="person">
+              {{ person.firstName }} {{ person.lastName }}
+            </li>
           </ul>
         </td>
       </tr>
@@ -45,7 +53,7 @@ ul {
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import { ProjectDto } from "@/dtos/projectDto";
+import { ProjectModel } from "@/models/projectModel";
 
 @Options({
   props: {
@@ -53,6 +61,6 @@ import { ProjectDto } from "@/dtos/projectDto";
   },
 })
 export default class ProjectList extends Vue {
-  public projects: ProjectDto[] = [];
+  public projects: ProjectModel[] = [];
 }
 </script>
