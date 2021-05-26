@@ -1,6 +1,6 @@
-import { Person } from "@/types/person";
+import { PersonDto } from "@/dtos/personDto";
 
-export interface PersonModel extends Person {
+export interface PersonModel extends PersonDto {
   projectCount: number;
   skills: string[];
 }

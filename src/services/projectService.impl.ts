@@ -1,6 +1,6 @@
 import { data } from "@/data";
-import { Person } from "@/types/person";
-import { Project } from "@/types/project";
+import { PersonDto } from "@/dtos/personDto";
+import { ProjectDto } from "@/dtos/projectDto";
 import { injectable } from "inversify-props";
 import { ProjectService } from "./projectService";
 
@@ -10,15 +10,15 @@ export class ProjectServiceImpl implements ProjectService {
     return data.projects.length;
   }
 
-  public getProjects(): Project[] {
+  public getProjects(): ProjectDto[] {
     return data.projects;
   }
 
-  public getProjectCount(person: Person): number {
+  public getProjectCount(person: PersonDto): number {
     return data.projects.filter((x) => x.peopleIds.includes(person.id)).length;
   }
 
-  public getSkills(person: Person): string[] {
+  public getSkills(person: PersonDto): string[] {
     return [
       ...new Set(
         data.projects

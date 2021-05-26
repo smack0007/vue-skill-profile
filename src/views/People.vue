@@ -45,13 +45,13 @@ export default class People extends Vue {
   @inject(PeopleServiceToken) private _peopleService!: PeopleService;
   @inject(ProjectServiceToken) private _projectsService!: ProjectService;
 
-  private _allPeople: PersonModel[] = [];
+  private allPeople: PersonModel[] = [];
   public people: PersonModel[] = [];
 
   public search: string = "";
 
   public created(): void {
-    this._allPeople = this._peopleService.getPeople().map((x) => {
+    this.allPeople = this._peopleService.getPeople().map((x) => {
       const skills = this._projectsService.getSkills(x);
       skills.sort();
 
@@ -61,7 +61,7 @@ export default class People extends Vue {
         skills,
       };
     });
-    this._allPeople.sort((a, b) => {
+    this.allPeople.sort((a, b) => {
       let result = a.lastName.localeCompare(b.lastName);
 
       if (result === 0) {
@@ -71,14 +71,14 @@ export default class People extends Vue {
       return result;
     });
 
-    this.people = [...this._allPeople];
+    this.people = [...this.allPeople];
   }
 
   public onSearchChange(): void {
     const searchFor = this.search.toUpperCase();
 
     this.people = [
-      ...this._allPeople.filter(
+      ...this.allPeople.filter(
         (x) =>
           x.firstName.toUpperCase().includes(searchFor) ||
           x.lastName.toUpperCase().includes(searchFor) ||

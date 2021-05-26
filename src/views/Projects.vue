@@ -11,7 +11,7 @@
 import { ProjectService, ProjectServiceToken } from "@/services/projectService";
 import { inject } from "inversify-props";
 import { Options, Vue } from "vue-class-component";
-import { Project } from "../types/project";
+import { ProjectDto } from "@/dtos/projectDto";
 import ProjectList from "@/components/ProjectList.vue";
 
 @Options({
@@ -23,7 +23,7 @@ import ProjectList from "@/components/ProjectList.vue";
 export default class Projects extends Vue {
   @inject(ProjectServiceToken) private _projectService!: ProjectService;
 
-  public projects: Project[] = [];
+  public projects: ProjectDto[] = [];
 
   public created(): void {
     this.projects = this._projectService.getProjects();

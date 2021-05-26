@@ -1,14 +1,14 @@
-import { Person } from "@/types/person";
-import { Project } from "@/types/project";
+import { PersonDto } from "@/dtos/personDto";
+import { ProjectDto } from "@/dtos/projectDto";
 
 export const ProjectServiceToken = Symbol.for("ProjectService");
 
 export interface ProjectService {
   getCount(): number;
 
-  getProjects(): Project[];
+  getProjects(): ProjectDto[];
 
-  getProjectCount(person: Person): number;
+  getProjectCount(person: PersonDto): number;
 
-  getSkills(person: Person): string[];
+  getSkills(person: PersonDto): string[];
 }

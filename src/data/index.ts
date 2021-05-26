@@ -1,12 +1,12 @@
-import { Person } from "../types/person";
-import { Project } from "../types/project";
+import { PersonDto } from "../dtos/personDto";
+import { ProjectDto } from "../dtos/projectDto";
 
 import { people } from "./people";
 import { projects } from "./projects";
 
-export interface PersonData extends Person {}
+export interface PersonData extends PersonDto {}
 
-export interface ProjectData extends Exclude<Project, "people"> {
+export interface ProjectData extends Exclude<ProjectDto, "people"> {
   peopleIds: number[];
 }
 

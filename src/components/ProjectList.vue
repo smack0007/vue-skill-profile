@@ -45,7 +45,7 @@ ul {
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import { Project } from "@/types/project";
+import { ProjectDto } from "@/dtos/projectDto";
 
 @Options({
   props: {
@@ -53,6 +53,6 @@ import { Project } from "@/types/project";
   },
 })
 export default class ProjectList extends Vue {
-  public projects: Project[] = [];
+  public projects: ProjectDto[] = [];
 }
 </script>

@@ -1,5 +1,5 @@
 import { data } from "@/data";
-import { Person } from "@/types/person";
+import { PersonDto } from "@/dtos/personDto";
 import { injectable } from "inversify-props";
 import { PeopleService } from "./peopleService";
 
@@ -9,7 +9,7 @@ export class PeopleServiceImpl implements PeopleService {
     return data.people.length;
   }
 
-  public getPeople(): Person[] {
+  public getPeople(): PersonDto[] {
     return data.people;
   }
 }
